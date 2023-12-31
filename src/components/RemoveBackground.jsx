@@ -1,0 +1,56 @@
+import React, { useState } from 'react'
+
+export default function RemoveBackground() {
+
+    return (
+        <div>
+            <div className='flex justify-center'>
+                <div className="">
+                    {/* Input  */}
+                    <div className="input">
+                        {/* Input Tag  */}
+                        <div className="input border border-gray-700 px-2 py-2 rounded-lg bg-gray-950 mb-5">
+                            <input
+                                type="file"
+                                className="text-sm text-gray-500 file:mr-5 file:py-1 file:px-3  file:text-xs file:font-medium file:border-0 file:rounded-md file:bg-gray-800 file:text-gray-500 hover:file:cursor-pointer hover:file:bg-blue-50 hover:file:text-blue-700 lg:w-[40em]"
+                            />
+                        </div>
+
+                        {/* Remove Background Button  */}
+                        <div className="flex justify-center mb-5">
+                            <button
+                                type="button"
+                                className="text-black bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 font-medium  rounded-lg text-sm px-5 py-2.5 text-center"
+                            >
+                                Remove Background
+                            </button>
+                        </div>
+                    </div>
+
+                    {/* Output  */}
+
+                    <div className="flex gap-1 mb-5 ">
+                        <div className="border-2 border-gray-500 rounded-l-lg border-dashed flex justify-center p-2 w-40 lg:w-80">
+                            <img className="w-90 h-90" src='https://firebasestorage.googleapis.com/v0/b/devknus-official-database.appspot.com/o/images%2FScreenshot%202023-07-07%20at%202.20.32%20PM-modified.png?alt=media&token=324ddd80-2b40-422c-9f1c-1c1fa34943fa' alt="img" />
+                        </div>
+
+                        <div className="border-2 border-gray-500 rounded-r-lg border-dashed flex justify-center p-2 w-40 lg:w-80">
+                            <img className="w-90 h-90" src={'https://firebasestorage.googleapis.com/v0/b/devknus-official-database.appspot.com/o/images%2FScreenshot%202023-07-07%20at%202.20.32%20PM-modified.png?alt=media&token=324ddd80-2b40-422c-9f1c-1c1fa34943fa'} alt="img" />
+
+                        </div>
+                    </div>
+
+                    <div className="flex justify-center">
+                        <a className='w-full' href={''} download={'save.png'}>
+                            <button className=' bg-gray-800 text-white w-full py-2 px-3 rounded-lg border border-gray-600'>
+                                Download
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    )
+}

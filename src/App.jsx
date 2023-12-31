@@ -3,14 +3,20 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import RemoveBackground from './components/RemoveBackground';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <Navbar></Navbar>
-    </>
+    <div>
+      <Navbar />
+      <div className="h-screen">
+        <RemoveBackground />
+      </div>
+      <Footer />
+    </div>
   )
 }
 
