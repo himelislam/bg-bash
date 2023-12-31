@@ -2,6 +2,39 @@ import React, { useState } from 'react'
 
 export default function RemoveBackground() {
 
+    const [image, setImage] = useState(null);
+    const [bgRemove, setBgRemove] = useState(null);
+
+    const handleRemoveBackground = async () => {
+        const apiKey = "DduWFFcAYVC55aAG2wh6JhvJ";
+        const apiUrl = "https://api.remove.bg/v1.0/removebg";
+
+        const formData = new formData();
+        formData.append('image_file', image, image.name);
+        formData.append('size', 'auto');
+
+        try {
+            const res = await fetch(apiUrl, {
+                method : 'POST',
+                headers : {
+                    'X-api-key' : apiKey
+                },
+                body : formData
+            })
+
+            const data = await res.blob();
+            
+            const reader = new FileReader();
+            reader.onloadend = () => setBgRemove(reader.result);
+            reader.readAsDataURL(data);
+
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    // DduWFFcAYVC55aAG2wh6JhvJ
+
     return (
         <div>
             <div className='flex justify-center'>
