@@ -93,6 +93,11 @@ export default function RemoveBackground() {
                                 <button className=' bg-gray-800 text-white w-full py-2 px-3 rounded-lg border border-gray-600'>
                                     Download
                                 </button>
+                                {/* <button class="bg-gray-800 text-white w-full py-2 px-3 rounded-lg border border-gray-600 cursor-pointer font-semibold overflow-hidden relative z-100 border border-gray-500 group px-8 py-2">
+                                    <span class="relative z-10 text-white-500 group-hover:text-black text-m duration-500">Download!</span>
+                                    <span class="absolute w-full h-full bg-green-200 -left-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
+                                    <span class="absolute w-full h-full bg-sky-400 -right-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
+                                </button> */}
                             </a>
                         </div>
                     }
