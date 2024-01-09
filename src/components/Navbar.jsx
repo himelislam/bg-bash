@@ -16,17 +16,17 @@ export default function Navbar() {
                     </div>
 
                     {/* Heading Tag  */}
-                    <h1 className='text-sky-200 text-3xl lg:text-6xl font-medium text-center mb-3'>
+                    <h1 className='text-sky-200 text-3xl lg:text-6xl font-medium text-center mb-3 font-tektur'>
                         BG-Bash
                     </h1>
 
-                    <h2 className='text-sm lg:text-6xl font-medium text-center mb-3 text-gray-400'>
+                    <h2 className='text-sm lg:text-6xl font-medium text-center mb-3 text-gray-400 font-tektur'>
                     Background Removal Tool
                     </h2>
 
                     {/* Paragraph Tag  */}
-                    <p className='text-white text-2xl font-light text-center mb-3'>
-                        Fast, simple and great performance.
+                    <p className='text-white text-2xl font-light text-center mb-3 font-tektur'>
+                    Achieve seamless background removal for images
                     </p>
 
 
