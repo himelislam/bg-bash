@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="font-tektur">
       <Navbar />
-      <div className="h-screen">
+      <div className="min-h-96	">
         <RemoveBackground />
       </div>
       <Footer />
